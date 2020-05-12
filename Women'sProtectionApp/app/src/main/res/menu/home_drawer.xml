@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_tool"
+            android:title="Tools" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/icon_exit"
+            android:title="Exit" />
+        <item
+            android:id="@+id/nav_logut"
+            android:icon="@drawable/icon_logout"
+            android:title="Log out" />
+
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+
+                android:title="Share"
+                android:icon="@drawable/ic_menu_share"/>
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/icon_about_us"
+                android:title="About us" />
+        </menu>
+    </item>
+
+</menu>

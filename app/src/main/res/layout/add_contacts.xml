@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/newbg4"
+    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_alignEnd="@+id/LV"
+            android:layout_alignTop="@+id/button3"
+            android:background="@drawable/white_butt"
+            android:onClick="addTodb"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/cast_expanded_controller_progress_text_color"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/LV"
+            android:layout_below="@+id/LV"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/white_butt"
+            android:onClick="onClickSelectContact"
+            android:text="Select"
+            android:textAllCaps="false"
+            android:textColor="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold" />
+
+        <ListView
+            android:id="@+id/LV"
+            android:layout_width="fill_parent"
+            android:layout_height="480dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/lv_bg"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:linksClickable="true"
+            android:text="Add contacts"
+            android:textColor="#ff6f00"
+            android:textSize="25dp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.android.womensprotection.app.Login"
+    android:background="@drawable/newbg4"
+    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/tf_bg22"
+            android:drawableLeft="@drawable/id_ic"
+            android:drawablePadding="-20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textColorHint="#4f4f51"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:fontFamily=" "
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#ffea00"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:background="@drawable/tf_bg22"
+            android:drawableLeft="@drawable/pw_ic"
+            android:drawablePadding="-20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textColorHint="#4f4f51"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:background="@drawable/white_butt"
+            android:hint="Submit"
+            android:onClick="submit"
+            android:textColorHint="#fff" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/iccc"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/Signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:onClick="TVsignup"
+            android:text="Click here to register"
+            android:textColor="#fdba33"
+            android:textSize="17dp"
+            android:textStyle="normal|bold"
+           />
+    </RelativeLayout>
+
+
+</RelativeLayout>

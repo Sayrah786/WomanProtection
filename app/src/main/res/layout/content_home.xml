@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_drawer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.android.womensprotection.app.Home"
+    tools:showIn="@layout/app_bar_home"
+    style="@style/AppTheme"
+    android:background="@drawable/newbg1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/Police"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignTop="@+id/Location"
+            android:background="@drawable/icon_st" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Alert"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Alert message"
+            android:textColor="#ff5500"
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:id="@+id/Call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/Alert"
+            android:layout_below="@+id/textView29"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/icon_call" />
+
+        <Button
+            android:id="@+id/Alert"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/icon_alert_red"
+            android:onClick="Alert" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Location"
+            android:layout_alignStart="@+id/Camera"
+            android:layout_marginLeft="2dp"
+            android:text="Camera" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/Police"
+            android:gravity="center"
+            android:text="Find \n Police"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Location"
+            android:layout_below="@+id/Police"
+            android:text="Share\n location"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/Location"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Call"
+            android:layout_alignStart="@+id/Call"
+            android:layout_below="@+id/Call"
+            android:layout_toEndOf="@+id/textView29"
+            android:gravity="center"
+            android:text="Call" />
+
+        <Button
+            android:id="@+id/Camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/textView3"
+            android:layout_alignStart="@+id/Alert"
+            android:background="@drawable/icon_cam" />
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/nav_header_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/prof_bg"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    tools:context="com.android.womensprotection.app.Home"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/iccc"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/user_details"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:onClick="profile"
+        android:text="My account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/U_NAME"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="0.0"
+        android:layout_marginLeft="2dp"
+        android:text="name" />
+
+</LinearLayout>

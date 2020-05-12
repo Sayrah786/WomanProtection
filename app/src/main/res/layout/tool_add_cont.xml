@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/newbg1">
+
+            <ListView
+                android:id="@+id/LV"
+                android:layout_width="fill_parent"
+                android:layout_height="470dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.07"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/lv_bg"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/button4"
+                android:onClick="addTodb"
+                android:textColor="@color/cast_expanded_controller_progress_text_color"
+                android:textStyle="normal|bold"
+                android:background="@drawable/white_butt"
+                android:textAllCaps="false"
+                android:text="Add"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/LV"
+                android:layout_alignEnd="@+id/LV" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:onClick="onClickSelectContact"
+                android:id="@+id/button3"
+                android:textStyle="normal|bold"
+                android:textColor="@color/cast_expanded_controller_text_color"
+                android:background="@drawable/white_butt"
+                android:textAllCaps="false"
+                android:text="Select"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_alignStart="@+id/LV" />
+</RelativeLayout>

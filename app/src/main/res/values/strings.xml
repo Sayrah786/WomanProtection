@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Women\'s protection</string>
+    <string name="title_activity_home">Women\'s protection</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="sett_items">
+        <item>Delete account </item>
+        <item>Managae contatcs</item>
+        <item>Change text</item>
+
+    </string-array>
+    <array name="Dialog_options">
+        <item>Remove</item>
+        <item>Contact details</item>
+    </array>
+    <array name="cont_det">
+        <item>Remove</item>
+        <item>Details</item>
+    </array>
+
+    <array name="tool_dialog">
+        <item>Manage contacts</item>
+        <item>Edit message</item>
+        <item>Delete account</item>
+    </array>
+    <string name="d_tool_title"> <font color="#FF065E52">Tools
+    </font>
+    </string>
+    <string name="about_us">\t \t \t The Women\'s protection app is safety app that helps the victim to notify her nearby friends
+        and family that she is in trouble. The situation when the victim feels that she is unsafe she can send alert message to
+        pre selected contacts. \n \n \t \t \t Women\'s protection app allows the victim to trace and share her location with her
+    contacts as well as on social media. Police station tracker traces the nearest police station. Using camera feature the victim can
+    share the land mark pictures on social media. \n \n \t \t \t The concept is given by Mr.Venkatesh shetty</string>
+
+</resources>

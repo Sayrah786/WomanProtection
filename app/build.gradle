@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+
+
+android {
+    signingConfigs {
+        release {
+
+            keyAlias 'password'
+            keyPassword 'password'
+            storeFile file('C:/Users/venke/keystore.jks')
+            storePassword 'password'
+        }
+    }
+    defaultConfig {
+
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.1'
+    defaultConfig {
+        applicationId "com.android.womensprotection.app"
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+
+dependencies {
+    compile 'com.android.support:multidex:1.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.android.support:appcompat-v7:26.0.0-beta1'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.android.support:support-v4:26.0.0-beta1'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
+    compile 'com.google.android.gms:play-services:9.4.0'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
+    compile 'com.google.android.gms:play-services:10.2.1'
+    compile "com.google.firebase:firebase-messaging:10.2.1"
+    compile 'com.google.android.gms:play-services-maps:16.1.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-annotations:28.0.0'
+}

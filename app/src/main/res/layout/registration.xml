@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/newbg4"
+    android:animateLayoutChanges="true"
+    tools:context="com.android.womensprotection.app.UserAuthorization.Registration"
+    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TextView
+            android:textColor="#ff0703"
+            android:text="New User ID :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_alignBaseline="@+id/user_name"
+            android:layout_alignBottom="@+id/user_name"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14" />
+
+        <TextView
+            android:textColor="#ff0703"
+            android:text="New password :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:layout_alignBaseline="@+id/new_pw"
+            android:layout_alignBottom="@+id/new_pw"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/confirm_pw"
+            android:layout_alignBottom="@+id/confirm_pw"
+            android:layout_alignStart="@+id/textView17"
+            android:text="Confirm password :"
+            android:textColor="#ff0703" />
+
+        <TextView
+            android:text="Phone number :"
+            android:textColor="#ff0703"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_alignBaseline="@+id/ph_number"
+            android:layout_alignBottom="@+id/ph_number"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <TextView
+            android:text="Address :"
+            android:textColor="#ff0703"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_alignBaseline="@+id/address"
+            android:layout_alignBottom="@+id/address"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11" />
+
+        <EditText
+            android:id="@+id/ph_number"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/tf_bg"
+            android:backgroundTint="#e5ffffff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Phone number here"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_alignStart="@+id/ph_number"
+            android:layout_below="@+id/ph_number"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/tf_bg"
+            android:backgroundTint="#e5ffffff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Your full address here"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_alignStart="@+id/address"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/tf_bg"
+            android:backgroundTint="#e5ffffff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="example@123"
+            android:inputType="none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/new_pw"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_alignStart="@+id/user_name"
+            android:layout_below="@+id/user_name"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/tf_bg"
+            android:backgroundTint="#e5ffffff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter new password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/confirm_pw"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_alignStart="@+id/new_pw"
+            android:layout_below="@+id/new_pw"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/tf_bg"
+            android:backgroundTint="#e5ffffff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Re-enter password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <TextView
+            android:text="Full name :"
+            android:textColor="#ff0703"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/textView8"
+            android:layout_alignBaseline="@+id/name"
+            android:layout_alignBottom="@+id/name"
+            android:layout_alignStart="@+id/Register"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/confirm_pw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/white_butt"
+            android:fontFamily="sans-serif"
+            android:onClick="signup"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+            android:textStyle="normal|bold"
+            android:typeface="sans"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_alignEnd="@+id/Register"
+            android:layout_below="@+id/textView"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/tf_bg"
+            android:backgroundTint="#e5ffffff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Your full name here"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Registration"
+            android:textAllCaps="false"
+            android:textColor="#faee07"
+            android:textSize="25dp"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
